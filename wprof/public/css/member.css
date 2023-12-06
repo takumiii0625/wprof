@@ -1,0 +1,72 @@
+.member-container {
+  padding: 30px 20px;
+}
+.member-container .person-container {
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 1%;
+       column-gap: 1%;
+  row-gap: 40px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.member-container .person-container .person {
+  background-color: #fff;
+  padding: 2% 1%;
+}
+.member-container .person-container .person .addcart {
+  border: none;
+}
+.member-container .person-container .person p:nth-of-type(1) {
+  line-height: 1.3em;
+  margin-bottom: 10px;
+  padding: 10px;
+  text-align: center;
+}
+.member-container .person-container .person p:nth-of-type(2) {
+  margin: 10px;
+}
+.member-container .person-container .person img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.member-container .person-container .person form {
+  margin-top: 20px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.member-container h1 {
+  font-size: 25px;
+  text-align: center;
+}
+.member-container .image-container {
+  position: relative;
+  text-align: center;
+}
+.member-container .image-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.member-container .image-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.member-container .image-container .overlay h2 {
+  margin: 0;
+}

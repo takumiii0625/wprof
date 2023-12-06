@@ -1,0 +1,93 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; // お好みで背景色を設定
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // 任意で影を追加
+    z-index: 1000; // 他の要素より上に表示するため
+
+
+    .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #0992d3;
+        padding: 0 5%;
+        font-family: 'Ephesis', cursive; // Dancing Scriptフォントを適用
+        letter-spacing: 3px;
+
+    }
+
+    .hamburger-menu {
+        display: block; // すべての画面サイズで表示
+        cursor: pointer;
+        position: absolute; // 絶対位置
+        right: 5%; // 右から10pxの位置
+        top: 10px; // トップから10pxの位置
+        z-index: 1000; // 必要に応じてz-indexを設定
+
+
+        .bar {
+            width: 25px;
+            height: 3px;
+            background-color: #0992d3;
+            margin: 5px 0;
+            transition: 0.4s;
+        }
+
+        &.change {
+            .bar:nth-child(1) {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+
+            .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .bar:nth-child(3) {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+        }
+    }
+
+    .navigation {
+        ul {
+            list-style: none;
+            display: none;
+            /* メニューはデフォルトで非表示 */
+            margin: 0;
+            padding: 0;
+            position: fixed;
+            /* メニューを画面に固定 */
+            right: 0;
+            /* 右側に配置 */
+            top: 60;
+            /* 上端からの位置 */
+            background-color: #f8f8f8ed;
+            flex-direction: column;
+            width: 170px;
+            /* メニューの幅を指定 */
+            text-align: center;
+            font-family: "Times New Roman", Times, serif;
+
+            li {
+                a {
+                    display: block;
+                    padding: 10px 15px;
+                    text-decoration: none;
+                    color: #333;
+
+
+                    &:hover {
+                        text-decoration: none;
+                        color: rgb(7, 197, 255);
+                    }
+                }
+            }
+
+            &.show {
+                display: block; // .showクラスが追加されたときに表示
+            }
+        }
+    }
+}

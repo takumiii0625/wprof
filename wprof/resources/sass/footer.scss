@@ -1,0 +1,79 @@
+.footer {
+    background-color: #2cd0dc;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        margin: 0;
+        padding: 0 10px;
+        /* スペース調整 */
+        font-size: 14px;
+    }
+
+
+}
+
+.footer p a {
+    text-decoration: none;
+    color: white;
+    /* リンクの色 */
+    position: relative;
+    padding-left: 20px;
+
+    &:hover {
+        color: #4c5355;
+    }
+
+    /* 矢印アイコンのためのスペース */
+}
+
+.footer p a::before {
+    content: '→';
+    /* 矢印アイコン */
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+.en {
+    align-self: flex-end;
+}
+
+.footer-links {
+    display: flex;
+}
+
+.footer p {
+    margin: 0 10px;
+    /* それぞれのリンクの間隔 */
+}
+
+
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer p {
+        margin: 5px 0;
+        /* 上下の余白 */
+    }
+
+    .en {
+        align-self: flex-start;
+        /* 左寄せにする */
+    }
+
+}

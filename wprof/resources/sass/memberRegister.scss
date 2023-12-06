@@ -1,0 +1,48 @@
+.memberRegister-container {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+
+    //ここから追加
+    .flash {
+        color: red;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .error {
+        li {
+            margin-bottom: 5px;
+            color: red;
+
+            &:last-child {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    //ここまで追加
+
+    .title-wrap,
+    .img-wrap,
+    .detail-wrap,
+    .fee-wrap,
+    .submit-wrap {
+        margin-top: 20px;
+    }
+
+    .detail-wrap {
+        textarea {
+            vertical-align: top;
+            width: 65%;
+        }
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+    }
+}

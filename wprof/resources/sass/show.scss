@@ -1,0 +1,545 @@
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInZoom {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInZooma {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.fadeInZoom {
+    opacity: 0;
+    /* 初期状態では透明 */
+    transform: scale(0.95);
+    /* 初期状態では少し縮小 */
+    transition: opacity 4s ease-out, transform 2s ease-out;
+}
+
+.fadeInZooma {
+    opacity: 0;
+    /* 初期状態では透明 */
+    transform: scale(0.95);
+    /* 初期状態では少し縮小 */
+    transition: opacity 3s ease-out, transform 2s ease-out;
+    margin-top: 25px;
+}
+
+.fadeInZoom-a {
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.fadeInZooma.is-animated {
+    opacity: 1;
+    /* アニメーション後は不透明 */
+    transform: scale(1);
+    /* アニメーション後は通常のサイズ */
+
+}
+
+.questions-answers-a {
+    .fadeInZoom.visible {
+        opacity: 1;
+        /* 見えるようになったら不透明に */
+        transform: scale(1);
+        /* 元のサイズに */
+        font-size: 150%;
+        color: white;
+        position: relative;
+        font-weight: 900;
+        z-index: 10;
+    }
+}
+
+.fadeInZoom.visible {
+    opacity: 1;
+    /* 見えるようになったら不透明に */
+    transform: scale(1);
+    /* 元のサイズに */
+    font-size: 150%;
+
+}
+
+
+p.slide-in {
+    font-family: "Times New Roman", Times, serif; // Robotoフォントを使用
+    font-size: 25px; // フォントサイズ
+    font-weight: 400; // フォントの太さ
+    color: #333; // フォントの色
+    line-height: 1.6; // 行の高さ
+}
+
+p.slide-in-profile {
+
+    font-family: 'Ephesis', cursive; // Dancing Scriptフォントを適用
+    font-size: 50px; // フォントサイズ
+    font-weight: 400; // フォントの太さ
+    color: #0992d3; // フォントの色
+    letter-spacing: 3px;
+    // その他のスタイル...
+
+
+    line-height: 1.6; // 行の高さ
+}
+
+.slide-in {
+    border-bottom: 1px solid #00BFFF;
+    /* 太い水色のアンダーバー */
+
+    /* アンダーバーとテキストの間の間隔 */
+    margin-bottom: 20px;
+    /* 要素間の余白 */
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 4s ease-out, transform 2s ease-out;
+    /* アニメーションの持続時間を2秒に */
+}
+
+.mask-bg {
+    color: transparent;
+    display: inline-block;
+    font-size: 20px; // フォントサイズ
+    font-weight: 400; // フォントの太さ
+    overflow: hidden;
+    position: relative;
+
+    /* テキストを最前面に */
+    transition: color 0ms 450ms;
+    font-family: "Times New Roman", Times, serif; // Robotoフォントを使用
+    line-height: 1.6; // 行の高さ
+
+}
+
+.mask-bg span {
+    position: relative;
+    z-index: 2;
+    padding: 10px;
+    font-size: 150%;
+    /* テキストを最前面に */
+    /* 縦の幅を広げる */
+    display: block;
+    /* ブロックレベル要素にする */
+    width: 100%;
+    /* 幅を100%に設定 */
+    text-align: left;
+    /* 左寄せにする */
+    height: auto;
+    /* 高さを自動に設定 */
+    margin-top: 1px;
+    /* 上の余白を追加する */
+    margin-bottom: 1px;
+    /* 下の余白を追加する */
+
+}
+
+.mask-bg::after {
+    background: linear-gradient(to right, #0ac0e9 0%, rgb(59, 187, 204) 50%, #42d3ed 100%);
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    /* 背景のz-indexを下げる */
+    right: 0;
+    top: 0;
+    transform: translate(0, 100%);
+}
+
+.mask-bg.is-animated {
+    color: #ffffff;
+    font-weight: 900;
+
+}
+
+.mask-bg.is-animated::after {
+    animation: mask-bg 3.6s cubic-bezier(0.8, 0, 0.170, 1)forwards;
+}
+
+
+
+
+
+
+@keyframes mask-bg {
+    0% {
+        transform: translate(-101%, 0);
+    }
+
+    40% {
+        transform: translate(0, 0);
+        /* ビュー内に完全に表示 */
+    }
+
+
+
+    100% {
+        transform: translate(0, 0);
+        /* 再度ビュー内に表示 */
+        opacity: 1;
+        /* 徐々に表れるための不透明度 */
+    }
+}
+
+
+
+
+.member-detail {
+    background-color: #ffffff; // 明るくクリーンな白色
+    border: 1px solid #dcdcdc; // ソフトな境界線
+    padding: 30px;
+    max-width: 650px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // より洗練された影
+
+    &:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    h1 {
+        line-height: 1.5;
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 0px;
+        font-family: 'Times New Roman', Times, serif; // クラシックなフォントスタイル
+        position: relative;
+        padding: 0.25em 0 0;
+    }
+
+    h1:after {
+        content: "";
+        display: block;
+        height: 4px;
+        background: -webkit-linear-gradient(to right, rgb(90, 155, 230), transparent);
+        background: linear-gradient(to right, rgb(112, 219, 255), transparent);
+    }
+
+    h2 {
+        line-height: 1.5;
+        font-size: 28px;
+        color: #333;
+        margin-bottom: 20px;
+        font-family: 'Times New Roman', Times, serif; // クラシックなフォントスタイル
+        position: relative;
+        padding: 0.1em 0.5em;
+        background: -webkit-linear-gradient(to right, rgb(115, 197, 255), transparent);
+        background: linear-gradient(to right, rgb(111, 217, 252), transparent);
+        color: #545454;
+    }
+}
+
+p {
+
+    line-height: 1.6;
+
+
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+.questions-answers {
+    background-color: #fff; // 明るい背景色
+    padding: 20px 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+
+    .qa {
+        margin-bottom: 20px;
+    }
+}
+
+
+.questions-answers-a {
+    background-image: url('/storage/images/sea.jpg');
+    /* サーバー上の画像パス */
+    background-size: cover;
+    /* 画像が要素を覆うように調整 */
+    background-position: center;
+    /* 画像を中央に配置 */
+    padding: 20px;
+    border-radius: 5px;
+
+
+
+}
+
+.cocorozashi {
+    padding: 20px;
+    border-radius: 5px;
+    color: #fff;
+    /* 文字色を明るい色に設定 */
+    position: relative;
+    z-index: 6;
+}
+
+
+.questions-answers-a {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* テキストに影を追加 */
+    /* その他のスタイル */
+}
+
+.questions-answers-a {
+    position: relative;
+    /* その他のスタイル */
+}
+
+.questions-answers-a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0 0 0 / 16%);
+    /* 暗いオーバーレイ */
+    border-radius: 5px;
+    /* 角丸を維持 */
+    z-index: 1;
+}
+
+
+
+
+
+.sns-links {
+    p {
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: rgb(0, 191, 255);
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover {
+            color: rgb(66, 192, 234);
+        }
+    }
+}
+
+
+.stroke {
+    position: relative;
+    padding: 20px;
+
+    /* テキストと枠線の間の余白 */
+}
+
+.stroke p {
+    position: relative;
+    /* テキストを枠線の上に表示 */
+}
+
+.stroke .border {
+    position: absolute;
+    background: rgb(44, 214, 220);
+    ;
+}
+
+/* 上辺の枠線 */
+.stroke .border.top {
+    height: 1px;
+    width: 0;
+    top: 0;
+    left: 0;
+}
+
+/* 右辺の枠線 */
+.stroke .border.right {
+    width: 1px;
+    height: 0;
+    top: 0;
+    right: 0;
+}
+
+/* 下辺の枠線 */
+.stroke .border.bottom {
+    height: 1px;
+    width: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/* 左辺の枠線 */
+.stroke .border.left {
+    width: 1px;
+    height: 0;
+    bottom: 0;
+    left: 0;
+}
+
+/* アニメーション定義 */
+@keyframes stroke-width {
+
+    0%,
+    100% {
+        width: 0;
+        opacity: 0;
+    }
+
+    50% {
+        width: calc(100% - 20px);
+        opacity: 1;
+    }
+}
+
+@keyframes stroke-height {
+
+    0%,
+    100% {
+        height: 0;
+        opacity: 0;
+    }
+
+    50% {
+        height: calc(100% - 20px);
+        opacity: 1;
+    }
+}
+
+/* アニメーション適用 */
+.stroke.is-animated .border.top,
+.stroke.is-animated .border.bottom {
+    animation: stroke-width 5.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.stroke.is-animated .border.right,
+.stroke.is-animated .border.left {
+    animation: stroke-height 5.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.line {
+    margin-top: 0;
+    width: 0;
+    height: 1px;
+    /* 線の太さ */
+    background-color: #ffff04;
+    /* 線の色 */
+    animation: expandContract 4s ease-in-out forwards;
+}
+
+@keyframes expandContract {
+    0% {
+        width: 0;
+        transform: translateX(0);
+        /* 左端からスタート */
+    }
+
+    50% {
+        width: 100%;
+        /* 完全に展開 */
+        transform: translateX(0);
+    }
+
+    100% {
+        width: 100;
+        transform: translateX(100%);
+        /* 右端へ移動しながら幅を0に */
+    }
+}
+
+
+
+
+
+
+
+
+/* スマートフォン向けのスタイル */
+@media (max-width: 768px) {
+    .mask-bg span {
+        position: relative;
+        z-index: 2;
+        padding: 10px;
+        /* 縦の幅を広げる */
+        display: block;
+        /* ブロックレベル要素にする */
+        width: 100%;
+        /* 幅を100%に設定 */
+        text-align: left;
+        /* 左寄せにする */
+        height: auto;
+        /* 高さを自動に設定 */
+        margin-top: 1px;
+        /* 上の余白を追加する */
+        margin-bottom: 1px;
+        /* 下の余白を追加する */
+        font-size: 80%;
+        /* ここにスマートフォン時の特定のスタイルを記述 */
+    }
+
+
+
+    .member-detail {
+
+
+        h1 {
+            line-height: 1.5;
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 0px;
+            font-family: 'Times New Roman', Times, serif; // クラシックなフォントスタイル
+
+        }
+    }
+
+    .questions-answers-a {
+        .fadeInZoom.visible {
+            opacity: 1;
+            /* 見えるようになったら不透明に */
+            transform: scale(1);
+            /* 元のサイズに */
+            font-size: 120%;
+            color: white;
+            position: relative;
+            font-weight: 900;
+            z-index: 10;
+        }
+    }
+
+    .fadeInZoom.visible {
+        opacity: 1;
+        /* 見えるようになったら不透明に */
+        transform: scale(1);
+        /* 元のサイズに */
+        font-size: 120%;
+
+    }
+}
