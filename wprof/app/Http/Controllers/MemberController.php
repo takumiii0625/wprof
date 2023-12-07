@@ -7,7 +7,7 @@ use App\Models\Member;
 
 class MemberController extends Controller
 {
-    //ここから追加
+
     public function index($company_id)
     {
         // 会社IDに基づいてメンバーをフィルタリング
