@@ -15,7 +15,7 @@ class MemberController extends Controller
 
         return view('member', compact('members', 'company_id'));
     }
-    //ここまで追加
+
 
 
     //ここから追加
