@@ -21,7 +21,7 @@ class ResetMembersTable extends Migration
         // カラムを追加
         Schema::table('members', function (Blueprint $table) {
             $table->string('name'); // 名前
-            $table->VARCHAR('company_id')->nullable(); // 会社ID
+            $table->text('company_id')->nullable(); // 会社ID
             $table->string('subtitle')->nullable(); // サブタイトル
             $table->text('profile'); // プロフィール
             $table->text('question1'); // 質問1
