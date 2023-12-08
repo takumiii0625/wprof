@@ -24,16 +24,21 @@ Route::get('/dashboard', function () {
 require __DIR__ . '/auth.php';
 
 //メンバー一覧ページ
-Route::get('/webprof.jp/{company_id}', 'MemberController@index')->name('member');
+//Route::get('/webprof.jp/{company_id}', 'MemberController@index')->name('member');
+Route::get('/{company_id}', 'MemberController@index')->name('member');
 
 //メンバー登録ページ
 Route::get('/memberRegister', 'MemberController@memberRegister')->name('memberRegister');           //この行を追加
 //メンバー登録
 Route::post('/memberStore', 'MemberController@memberStore')->name('memberStore');            //この行を追加
 //管理画面の表示
-Route::get('/webprof.jp/{company_id}/admin', 'MemberController@admin')->name('admin')->middleware('auth');
+//Route::get('/webprof.jp/{company_id}/admin', 'MemberController@admin')->name('admin')->middleware('auth');
+Route::get('/{company_id}/admin', 'MemberController@admin')->name('admin')->middleware('auth');
+
 //詳細画面
-Route::get('/webprof.jp/{company_id}/{id}', 'MemberController@show')->name('member.show');
+//Route::get('/webprof.jp/{company_id}/{id}', 'MemberController@show')->name('member.show');
+Route::get('/{company_id}/{id}', 'MemberController@show')->name('member.show');
+
 //管理画面でのメンバーの削除
 Route::delete('/delete/{id}', 'MemberController@memberDelete')->name('delete');
 //編集画面
