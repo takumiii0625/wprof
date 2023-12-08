@@ -14,7 +14,7 @@ class AddCompanyIdAndSubtitleToMembersTable extends Migration
     public function up()
     {
         Schema::table('members', function (Blueprint $table) {
-            $table->unsignedBigInteger('company_id')->nullable(); // 会社ID（外部キーとしても使う場合はunsignedBigIntegerが適切）
+            $table->text('company_id')->nullable(); // 会社ID（外部キーとしても使う場合はunsignedBigIntegerが適切）
             $table->string('subtitle')->nullable(); // サブタイトル
 
         });

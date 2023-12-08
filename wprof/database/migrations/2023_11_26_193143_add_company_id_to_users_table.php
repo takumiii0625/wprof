@@ -14,7 +14,7 @@ class AddCompanyIdToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->unsignedBigInteger('company_id')->nullable()->after('name'); // 会社IDカラムを追加
+            $table->text('company_id')->nullable()->after('name'); // 会社IDカラムを追加
 
         });
     }

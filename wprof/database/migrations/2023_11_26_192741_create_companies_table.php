@@ -16,7 +16,7 @@ class CreateCompaniesTable extends Migration
         Schema::create('companies', function (Blueprint $table) {
             $table->id();
             $table->string('name'); // 会社名
-            $table->unsignedBigInteger('company_id'); // 会社ID
+            $table->text('company_id'); // 会社ID
             $table->string('top_photo')->nullable(); // TOP写真
             $table->string('phone_number')->nullable(); // 電話番号
             $table->string('address1')->nullable(); // 会社住所1
