@@ -14,9 +14,9 @@ class ResetMembersTable extends Migration
     public function up()
     {
         // まずカラムを削除
-        Schema::table('members', function (Blueprint $table) {
-            $table->dropColumn(['name', 'company_id', 'subtitle', 'profile', 'question1', 'question2', 'question3', 'answer1', 'answer2', 'answer3', 'photo0', 'photo1', 'photo2', 'photo3', 'sns_link1', 'sns_link2', 'sns_link3', 'message']);
-        });
+        // Schema::table('members', function (Blueprint $table) {
+        //   $table->dropColumn(['name', 'company_id', 'subtitle', 'profile', 'question1', 'question2', 'question3', 'answer1', 'answer2', 'answer3', 'photo0', 'photo1', 'photo2', 'photo3', 'sns_link1', 'sns_link2', 'sns_link3', 'message']);
+        // });
 
         // カラムを追加
         Schema::table('members', function (Blueprint $table) {
