@@ -72,8 +72,8 @@ class MemberController extends Controller
         foreach (['photo0', 'photo1', 'photo2', 'photo3'] as $photoField) {
             if ($request->hasFile($photoField)) {
                 $file = $request->file($photoField);
-                $filename = $file->getClientOriginalName();
-                $file->move(public_path('storage/images'), $filename);
+                $filename = time() . '_' . $file->getClientOriginalName(); // ファイル名を一意にする
+                $file->storeAs('public/images', $filename); // storage/app/public/images に保存
                 $member->{$photoField} = $filename;
             }
         }

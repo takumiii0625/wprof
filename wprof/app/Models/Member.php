@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Member extends Model
 {
@@ -68,10 +69,11 @@ class Member extends Model
         // 画像ファイルの処理
         foreach (['photo0', 'photo1', 'photo2', 'photo3'] as $photoField) {
             if ($request->hasFile($photoField)) {
-                $originalName = $request->file($photoField)->getClientOriginalName();
-                $name = date('Ymd_His') . '_' . $originalName;
-                $request->file($photoField)->move('storage/images', $name);
-                $this->$photoField = $name;
+                $file = $request->file($photoField);
+                $extension = $file->getClientOriginalExtension();
+                $filename = Str::random(10) . '.' . $extension; // ランダムなファイル名を生成
+                $file->storeAs('public/images', $filename); // storage/app/public/images に保存
+                $this->$photoField = $filename;
             }
         }
 
