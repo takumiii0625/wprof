@@ -241,7 +241,7 @@ img {
 }
 
 .questions-answers-a {
-  background-image: url("/storage/images/sea.jpg");
+  background-image: url("/sea.jpg");
   /* サーバー上の画像パス */
   background-size: cover;
   /* 画像が要素を覆うように調整 */

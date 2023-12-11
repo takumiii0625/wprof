@@ -51,7 +51,7 @@
                 <h1>{!! nl2br(e($member->subtitle)) !!}</h1>
                 <div class="line"></div>
 
-                <div><img src="{{ asset('storage/images/'.$member->photo0) }}" alt="顔写真" class="fadeInZooma"></div>
+                <div><img src="{{ asset('test/public/images/'.$member->photo0) }}" alt="顔写真" class="fadeInZooma"></div>
                 <p class="slide-in-profile">Profile</p>
 
                 <h2>{{ $member->name }}</h2>
@@ -75,7 +75,7 @@
                         </div>
                     </div>
                     @if($member->photo1)
-                    <div><img src="{{ asset('storage/images/'.$member->photo1) }}" alt="画像1" class="fadeInZoom"></div>
+                    <div><img src="{{ asset('test/public/images/'.$member->photo1) }}" alt="画像1" class="fadeInZoom"></div>
                     @endif
                 </div><br>
             </div>
@@ -94,7 +94,7 @@
                         </div>
                     </div>
                     @if($member->photo2)
-                    <div><img src="{{ asset('storage/images/'.$member->photo2) }}" alt="画像2" class="fadeInZoom"></div>
+                    <div><img src="{{ asset('test/public/images/'.$member->photo2) }}" alt="画像2" class="fadeInZoom"></div>
                     @endif
                 </div><br>
             </div>
@@ -113,7 +113,7 @@
                         </div>
                     </div>
                     @if($member->photo3)
-                    <div><img src="{{ asset('storage/images/'.$member->photo3) }}" alt="画像3" class="fadeInZoom"></div>
+                    <div><img src="{{ asset('test/public/images/'.$member->photo3) }}" alt="画像3" class="fadeInZoom"></div>
                     @endif
                 </div><br>
             </div>

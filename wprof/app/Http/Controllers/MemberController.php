@@ -73,7 +73,8 @@ class MemberController extends Controller
             if ($request->hasFile($photoField)) {
                 $file = $request->file($photoField);
                 $filename = time() . '_' . $file->getClientOriginalName(); // ファイル名を一意にする
-                $file->storeAs('public/images', $filename); // storage/app/public/images に保存
+                $destinationPath = public_path('test/public/images');
+                $file->move($destinationPath, $filename);
                 $member->{$photoField} = $filename;
             }
         }

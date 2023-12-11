@@ -72,7 +72,8 @@ class Member extends Model
                 $file = $request->file($photoField);
                 $extension = $file->getClientOriginalExtension();
                 $filename = Str::random(10) . '.' . $extension; // ランダムなファイル名を生成
-                $file->storeAs('public/images', $filename); // storage/app/public/images に保存
+                $destinationPath = public_path('test/public/images'); // 画像を保存するパス
+                $file->move($destinationPath, $filename); // public/test/public/images に保存
                 $this->$photoField = $filename;
             }
         }

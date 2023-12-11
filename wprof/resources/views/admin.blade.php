@@ -20,7 +20,7 @@
         <h1>メンバー一覧</h1>
         @foreach($members as $member)
         <div class="item">
-            <img src="{{asset('storage/images/'.$member->photo0)}}" alt="">
+            <img src="{{asset('test/public/images/'.$member->photo0)}}" alt="">
             <div>
                 <h2>商品名 : {{$member->name}}</h2>
                 <p>商品の説明 : {{$member->profile}}</p>

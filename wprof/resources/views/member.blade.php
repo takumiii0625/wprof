@@ -24,7 +24,7 @@
     <div class="member-container">
         <!-- ここに画像を追加 -->
         <div class="image-container">
-            <img src="{{ asset('storage/images/top.jpg') }}" alt="社員紹介">
+            <img src="{{ asset('top.jpg') }}" alt="社員紹介">
             <div class="overlay">
 
                 <h1>OBFall株式会社</h1>
@@ -39,7 +39,7 @@
 
                     <p>{{$member->name}}<br>
                         <!-- {{$member->company_id}}</p>-->
-                        <div><img src="{{asset('storage/images/'.$member->photo0)}}" alt=""></div>
+                        <div><img src="{{asset('test/public/images/'.$member->photo0)}}" alt=""></div>
                         <p>{{$member->profile}}</p>
                 </a>
             </div>
