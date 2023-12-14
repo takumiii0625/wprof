@@ -153,7 +153,7 @@
     <!-- フッター -->
     <footer class="footer">
         <div class="footer-links">
-            <p><a href="https://obfall.com/" class="fancy-link">個人情報方針</a></p>
+            <p><a href="{{ route('privacy.policy') }}" class="fancy-link">個人情報方針</a></p>
             <p><a href="https://obfall.com/" class="fancy-link">企業サイト</a></p>
             <p><a href="https://obfall-recruit.com/" class="fancy-link">採用サイト</a></p>
         </div>

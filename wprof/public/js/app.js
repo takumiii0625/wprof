@@ -33396,6 +33396,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/privacy.scss":
+/*!*************************************!*\
+  !*** ./resources/sass/privacy.scss ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/css/app.css":
 /*!*******************************!*\
   !*** ./resources/css/app.css ***!
@@ -33820,6 +33833,7 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 			"css/reset": 0,
 /******/ 			"css/member": 0,
 /******/ 			"css/app": 0,
+/******/ 			"css/privacy": 0,
 /******/ 			"css/footer": 0,
 /******/ 			"css/header": 0
 /******/ 		};
@@ -33871,15 +33885,16 @@ module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"P
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/show","css/memberRegister","css/admin","css/reset","css/member","css/app","css/footer","css/header"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/show","css/memberRegister","css/admin","css/reset","css/member","css/app","css/footer","css/header"], () => (__webpack_require__("./resources/sass/member.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/show","css/memberRegister","css/admin","css/reset","css/member","css/app","css/footer","css/header"], () => (__webpack_require__("./resources/sass/reset.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/show","css/memberRegister","css/admin","css/reset","css/member","css/app","css/footer","css/header"], () => (__webpack_require__("./resources/sass/admin.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/show","css/memberRegister","css/admin","css/reset","css/member","css/app","css/footer","css/header"], () => (__webpack_require__("./resources/sass/memberRegister.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/show","css/memberRegister","css/admin","css/reset","css/member","css/app","css/footer","css/header"], () => (__webpack_require__("./resources/sass/show.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/show","css/memberRegister","css/admin","css/reset","css/member","css/app","css/footer","css/header"], () => (__webpack_require__("./resources/sass/header.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/show","css/memberRegister","css/admin","css/reset","css/member","css/app","css/footer","css/header"], () => (__webpack_require__("./resources/sass/footer.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/show","css/memberRegister","css/admin","css/reset","css/member","css/app","css/footer","css/header"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/show","css/memberRegister","css/admin","css/reset","css/member","css/app","css/privacy","css/footer","css/header"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/show","css/memberRegister","css/admin","css/reset","css/member","css/app","css/privacy","css/footer","css/header"], () => (__webpack_require__("./resources/sass/member.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/show","css/memberRegister","css/admin","css/reset","css/member","css/app","css/privacy","css/footer","css/header"], () => (__webpack_require__("./resources/sass/reset.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/show","css/memberRegister","css/admin","css/reset","css/member","css/app","css/privacy","css/footer","css/header"], () => (__webpack_require__("./resources/sass/admin.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/show","css/memberRegister","css/admin","css/reset","css/member","css/app","css/privacy","css/footer","css/header"], () => (__webpack_require__("./resources/sass/memberRegister.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/show","css/memberRegister","css/admin","css/reset","css/member","css/app","css/privacy","css/footer","css/header"], () => (__webpack_require__("./resources/sass/show.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/show","css/memberRegister","css/admin","css/reset","css/member","css/app","css/privacy","css/footer","css/header"], () => (__webpack_require__("./resources/sass/header.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/show","css/memberRegister","css/admin","css/reset","css/member","css/app","css/privacy","css/footer","css/header"], () => (__webpack_require__("./resources/sass/footer.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/show","css/memberRegister","css/admin","css/reset","css/member","css/app","css/privacy","css/footer","css/header"], () => (__webpack_require__("./resources/sass/privacy.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/show","css/memberRegister","css/admin","css/reset","css/member","css/app","css/privacy","css/footer","css/header"], () => (__webpack_require__("./resources/css/app.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

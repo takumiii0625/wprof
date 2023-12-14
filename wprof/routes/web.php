@@ -28,9 +28,9 @@ require __DIR__ . '/auth.php';
 Route::get('/{company_id}', 'MemberController@index')->name('member');
 
 //メンバー登録ページ
-Route::get('OBFall/memberRegister', 'MemberController@memberRegister')->name('memberRegister');           //この行を追加
+Route::get('/obfall/memberRegister', 'MemberController@memberRegister')->name('memberRegister');           //この行を追加
 //メンバー登録
-Route::post('OBFall/memberStore', 'MemberController@memberStore')->name('memberStore');            //この行を追加
+Route::post('/obfall/memberStore', 'MemberController@memberStore')->name('memberStore');            //この行を追加
 //管理画面の表示
 //Route::get('/webprof.jp/{company_id}/admin', 'MemberController@admin')->name('admin')->middleware('auth');
 Route::get('/{company_id}/admin', 'MemberController@admin')->name('admin')->middleware('auth');
@@ -44,3 +44,5 @@ Route::delete('/delete/{id}', 'MemberController@memberDelete')->name('delete');
 //編集画面
 Route::get('/edit/{company_id}/{id}', 'MemberController@edit')->name('member.edit');
 Route::put('/update/{company_id}/{id}', 'MemberController@update')->name('member.update');
+//プライバシーポリシー
+Route::get('/obfall/privacy/policy', 'MemberController@privacy')->name('privacy.policy');

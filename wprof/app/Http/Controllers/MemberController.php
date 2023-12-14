@@ -16,6 +16,11 @@ class MemberController extends Controller
         return view('member', compact('members', 'company_id'));
     }
 
+    public function privacy()
+    {
+        return view('privacy.policy');
+    }
+
 
 
     //ここから追加

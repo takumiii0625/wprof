@@ -21,6 +21,8 @@ mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/show.scss', 'public/css/show.css')
     .sass('resources/sass/header.scss', 'public/css/header.css')
     .sass('resources/sass/footer.scss', 'public/css/footer.css')
+    .sass('resources/sass/privacy.scss', 'public/css/privacy.css')
+
     //ここまで追加
     .postCss('resources/css/app.css', 'public/css', [
         require('postcss-import'),
