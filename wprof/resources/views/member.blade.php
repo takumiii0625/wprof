@@ -14,8 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
     <meta property="og:image" content="{{ asset('top.jpg') }}" />
-    <meta property="og:description" content="OBFall株式会社 社員紹介 - OBFall株式会社の社員紹介ページです。個性豊かなメンバーをぜひご覧ください。" />
-    <title>OBFall メンバー一覧</title>
+    <meta property="og:description" content="OBFall株式会社の社員紹介ページです。個性豊かなメンバーをぜひご覧ください。" />
+    <title>OBFall株式会社　社員紹介</title>
 </head>
 
 <body>
