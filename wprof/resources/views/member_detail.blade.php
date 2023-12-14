@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
-    <meta property="og:title" content=" OBFall {{ $menuMember->name }}" />
     <meta property="og:image" content="{{ asset('test/public/images/'.$member->photo0) }}" />
 
 
