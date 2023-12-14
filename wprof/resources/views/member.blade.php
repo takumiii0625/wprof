@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
     <meta property="og:image" content="{{ asset('top.jpg') }}" />
-
+    <meta property="og:description" content="あなたの、あなたによる、あなたのためのを　全てのひとへ" />
     <title>OBFall メンバー一覧</title>
 </head>
 
