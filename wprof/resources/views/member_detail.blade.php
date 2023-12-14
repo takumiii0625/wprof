@@ -8,13 +8,12 @@
     <link href="{{ asset('css/header.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/footer.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/reset.css') }}" rel="stylesheet" type="text/css">
-    <title>OBFall メンバー</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
     <meta property="og:image" content="{{ asset('test/public/images/'.$member->photo0) }}" />
-
+    <title>OBFall株式会社　{{ $menuMember->id == 1 ? '代表取締役 ' : '' }}{{ $menuMember->name }}</title>
 
 
 </head>
