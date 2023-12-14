@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
     <meta property="og:image" content="{{ asset('test/public/images/'.$member->photo0) }}" />
-    <title>OBFall株式会社　{{ $menuMember->name }}</title>
+    <title>OBFall株式会社</title>
 
 
 </head>
