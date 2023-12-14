@@ -46,7 +46,7 @@
         </nav>
     </header>
     <div class="member-container">
-        <h1>メンバー詳細</h1>
+        <h1> </h1>
         <div class="person-container">
 
             <div class="member-detail">
