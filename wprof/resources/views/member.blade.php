@@ -19,7 +19,7 @@
 
 <body>
     <header class="header">
-        <a href="#" class="logo">WebProf</a>
+        <div class="logo">WebProf</div>
     </header>
     <div class="member-container">
         <!-- ここに画像を追加 -->
