@@ -13,11 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=The+Nautigal&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
-    <meta property="og:title" content="ページのタイトル" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="ページのURL" />
+    <meta property="og:title" content=" OBFall {{ $menuMember->name }}" />
     <meta property="og:image" content="{{ asset('test/public/images/'.$member->photo0) }}" />
-    <meta property="og:description" content="ページの説明" />
+
 
 
 </head>
